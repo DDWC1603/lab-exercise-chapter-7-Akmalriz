@@ -1,19 +1,19 @@
-//compare two strings
-//complete the program below. 
-
+#include <string.h>
 #include <iostream>
+#include <console.h>
+#include <simpio.h>
+
+using namespace std; 
 
 int main()
 {
 
-	string myName="Mike";//write your name there.
-	//make a while loop until user input 'quit' to exit/end the program
+	string myName="Akmal";
 
-	(true)
+	while(true)
 	{
-		
-		string userName;
-		//get the user input for string.
+		cout<<"Enter your name (or 'quit' to exit): ";
+		string userName = getLine();
 		if(userName=="Abu")
 	       	{
 			cout<<"Hey Abu!"<<endl;
@@ -23,12 +23,15 @@ int main()
 			cout<<endl;
 			break;
 		}
-		else
+		else if(userName !=myName)
 		{
 			cout<<"Aha! its "<<myName<<endl;
+		}
+		else
+		{
+			cout<<"Oh , its you,"<< myName << endl;
 		}
 	}
 	return 0;
 }
-
 
